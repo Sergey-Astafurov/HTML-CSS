@@ -109,10 +109,7 @@ a {
 
 .grid {
   display: grid;
-  grid-template-areas:
-    "A B C "
-    "F F D "
-    "F F E ";
+  grid-template-columns: repeat(3, 362px);
   gap: 30px;
   max-height: 1227px;
   margin-bottom: 250px;
@@ -139,30 +136,14 @@ a {
   max-width: 754px;
   margin-bottom: 0;
   padding-bottom: 0;
+  grid-column: 1/3;
+  grid-row: 2/4;
 }
 .big .feature_icon,
 .big .feature_title {
   margin-bottom: 60px;
 }
 
-.feature_item-1 {
-  grid-area: A;
-}
-.feature_item-2 {
-  grid-area: B;
-}
-.feature_item-3 {
-  grid-area: C;
-}
-.feature_item-4 {
-  grid-area: D;
-}
-.feature_item-5 {
-  grid-area: E;
-}
-.big {
-  grid-area: F;
-}
 .about {
   gap: 25px;
   justify-content: center;
