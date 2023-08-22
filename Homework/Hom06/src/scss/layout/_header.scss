@@ -1,0 +1,70 @@
+.header {
+    background: $colorBlack;
+    padding: 18px 4%;
+}
+.nav {
+    @include flexspbwen;
+    &_right {
+        width: 170px;
+        @include flexspbwen;
+    }
+    &_left {
+        align-items: baseline;
+    }
+}
+.shop {
+    position: relative;
+    ::after {
+        content: "5";
+        color: white;
+        font-size: 13px;
+        position: absolute;
+        top: -9px;
+        left: 20px;
+        background: $colorAkcent;
+        text-align: center;
+        border-radius: 50%;
+        width: 19px;
+        height: 19px;
+    }
+}
+.logo {
+    margin-right: 40px;
+}
+.nav-nav {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    min-width: 232px;
+    position: absolute;
+    padding: 32px;
+    top: 78px;
+    right: 0;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+.menu:hover .nav-nav {
+    opacity: 1;
+    visibility: visible;
+}
+.header-nav {
+    font-weight: bold;
+
+    margin-bottom: 24px;
+}
+.nav-nav-title {
+    color: $colorAkcent;
+    font-weight: 400;
+    padding-bottom: 12px;
+}
+.nav-list {
+    color: #6f6e6e;
+    font-weight: 400;
+    line-height: normal;
+    li {
+        padding-bottom: 11px;
+        padding-left: 20px;
+    }
+}

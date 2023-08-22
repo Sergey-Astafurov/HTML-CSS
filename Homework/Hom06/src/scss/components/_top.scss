@@ -1,0 +1,27 @@
+.top {
+    gap: 63px;
+    align-items: center;
+    background: #f1e4e6;
+    &_text {
+        padding-left: 16px;
+        border-left: 12px solid $colorAkcent;
+        h1 {
+            font-size: 48px;
+        }
+        b {
+            color: $colorAkcent;
+        }
+    }
+    img {
+        max-width: 50%;
+    }
+}
+.top_text span,
+b {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+}

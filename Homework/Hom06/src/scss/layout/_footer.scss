@@ -1,0 +1,25 @@
+.footer {
+    background: #222224;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    .f_social {
+        gap: 8px;
+        .f_social_item {
+            width: 32px;
+            height: 32px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background: $colorAkcent;
+            }
+            &:hover path {
+                fill: #fff;
+            }
+        }
+    }
+}
