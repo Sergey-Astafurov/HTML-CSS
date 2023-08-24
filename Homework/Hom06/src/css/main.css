@@ -1111,17 +1111,22 @@ details {
   flex-direction: column;
   gap: 40px;
 }
-.shopping-list__btn {
+
+.shopping-btn {
+  justify-content: space-between;
+}
+.shopping-btn__btn {
   padding: 17px 39px;
   text-align: center;
   max-width: 235px;
   border: 1px solid #a4a4a4;
   font-size: 14px;
   font-weight: 300;
+  transition: all 0.2s ease-in-out;
 }
-
-.shopping-btn {
-  justify-content: space-between;
+.shopping-btn__btn:hover {
+  background: #f16d7f;
+  color: #fff;
 }
 
 .shopping-item {
@@ -1153,6 +1158,11 @@ details {
 .shopping-item__price {
   padding-bottom: 9px;
 }
+.shopping-item__price .price {
+  color: #f16d7f;
+  font-weight: 400;
+  font-size: 22px;
+}
 .shopping-item__color {
   padding-bottom: 9px;
 }
@@ -1176,6 +1186,10 @@ details {
   right: 22px;
   top: 28px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.shopping-item__close:hover {
+  transform: scale(1.2);
 }
 
 .shopping-form__title {
@@ -1203,13 +1217,15 @@ details {
   background: none;
   border: 1px solid #a4a4a4;
   margin-bottom: 57px;
+  transition: all 0.3s ease-out;
+}
+.shopping-form__form button:hover {
+  background: #f16d7f;
+  color: #fff;
 }
 
 .check-info {
   background: #f5f3f3;
-  padding-top: 39px;
-  padding-right: 34px;
-  padding-bottom: 42px;
   padding: 39px 34px 42px 43px;
   display: flex;
   flex-direction: column;
@@ -1246,4 +1262,8 @@ details {
   background: #f16d7f;
   border: none;
   margin-top: 17px;
+  transition: all 0.3s ease-out;
+}
+.check-info__button:hover {
+  background: #c34554;
 }

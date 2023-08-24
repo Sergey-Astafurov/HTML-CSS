@@ -12,6 +12,9 @@
 .shopping-list {
     flex-direction: column;
     gap: 40px;
+}
+.shopping-btn {
+    justify-content: space-between;
     &__btn {
         padding: 17px 39px;
         text-align: center;
@@ -19,10 +22,12 @@
         border: 1px solid #a4a4a4;
         font-size: 14px;
         font-weight: 300;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background: $colorAkcent;
+            color: #fff;
+        }
     }
-}
-.shopping-btn {
-    justify-content: space-between;
 }
 .shopping-item {
     position: relative;
@@ -54,6 +59,11 @@
 
     &__price {
         padding-bottom: 9px;
+        .price {
+            color: $colorAkcent;
+            font-weight: 400;
+            font-size: 22px;
+        }
     }
 
     &__color {
@@ -82,6 +92,10 @@
         right: 22px;
         top: 28px;
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }
 .shopping-form {
@@ -109,14 +123,18 @@
             background: none;
             border: 1px solid #a4a4a4;
             margin-bottom: 57px;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                background: $colorAkcent;
+                color: #fff;
+            }
         }
     }
 }
 .check-info {
     background: #f5f3f3;
-    padding-top: 39px;
-    padding-right: 34px;
-    padding-bottom: 42px;
+
     padding: 39px 34px 42px 43px;
     display: flex;
     flex-direction: column;
@@ -126,6 +144,7 @@
         font-weight: 400;
         margin-bottom: 12px;
         align-self: flex-end;
+
         .sub {
             padding-left: 25px;
             font-size: 11px;
@@ -139,6 +158,7 @@
         font-weight: 300;
         margin-bottom: 21px;
         padding-right: 4px;
+
         .grand {
             padding-left: 25px;
             color: $colorAkcent;
@@ -153,5 +173,10 @@
         background: $colorAkcent;
         border: none;
         margin-top: 17px;
+        transition: all 0.3s ease-out;
+        &:hover {
+            background: #c34554;
+            // color: $colorAkcent;
+        }
     }
 }
