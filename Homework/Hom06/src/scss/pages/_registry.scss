@@ -1,7 +1,11 @@
 .registry {
+    width: 100%;
     padding-top: 64px;
     padding-bottom: 96px;
     justify-content: space-between;
+
+    padding-left: 2%;
+    padding-right: 2%;
     &__form {
     }
 
@@ -15,7 +19,7 @@
 
     &__title {
         color: #222;
-        font-size: 16px;
+        font-size: $mediumD;
     }
 
     &__item {
@@ -38,7 +42,7 @@
     }
 
     &__btn {
-        font-size: 14px;
+        font-size: $SmallD;
         color: #fff;
         background: $colorAkcent;
         border: none;
@@ -47,24 +51,25 @@
     }
 
     &__info {
-        flex-basis: 650px;
-        flex-shrink: 1;
+        flex: 0 2 auto;
+        max-width: 650px;
+        padding: 0 3%;
         display: flex;
         flex-direction: column;
         gap: 21px;
         .registry__info-heading {
-            font-size: 24px;
+            font-size: $bigT;
             font-weight: 300;
         }
         .registry__info-desc {
-            font-size: 24px;
+            font-size: $bigT;
             font-weight: 300;
         }
     }
 
     &__desc {
         color: #b1b1b1;
-        font-size: 13px;
+        font-size: $SmallD;
         font-weight: 300;
         margin-bottom: 19px;
     }
@@ -74,7 +79,7 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        font-size: 24px;
+        font-size: $bigT;
         padding-left: 20px;
     }
 
@@ -83,9 +88,6 @@
         padding-left: 14px;
         margin-left: 10px;
     }
-}
-
-.gender {
 }
 
 .registry__gender-item > input {

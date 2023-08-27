@@ -2,7 +2,7 @@
 }
 .feature_list {
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 1.87rem;
     margin-bottom: 48px;
 }
 .img {
@@ -14,8 +14,8 @@
     height: 44px;
     visibility: hidden;
     opacity: 0;
-    font-size: 14px;
-    padding: 14px;
+    font-size: $SmallD;
+    padding: $SmallD;
     display: flex;
     border: 1px solid #fff;
     color: #fff;
@@ -58,12 +58,12 @@
 }
 .feature_desc {
     color: #5d5d5d;
-    font-size: 14px;
+    font-size: $SmallD;
     font-weight: 300;
 }
 .feature_price {
     color: #f16d7f;
-    font-size: 16px;
+    font-size: $mediumD;
     font-weight: 400;
 }
 .link_all {
@@ -71,7 +71,7 @@
     padding: 15px 39px;
     color: #f26376;
     border: 1px solid #ff6a6a;
-    font-size: 16px;
+    font-size: $SmallD;
     max-width: 215px;
     margin: 0 auto;
 }

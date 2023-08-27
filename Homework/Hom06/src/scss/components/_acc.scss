@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     color: #fff;
     text-align: center;
-    gap: 30px;
+    gap: $bigFontSize;
     margin-bottom: 96px;
 
     &_item-1,
@@ -29,5 +29,5 @@
 }
 .acc_title {
     color: $colorAkcent;
-    font-size: 24px;
+    font-size: $bigT;
 }

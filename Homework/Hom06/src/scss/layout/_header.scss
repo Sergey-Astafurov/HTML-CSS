@@ -14,7 +14,7 @@
 }
 .shop {
     position: relative;
-    ::after {
+    &::after {
         content: "5";
         color: white;
         font-size: 13px;

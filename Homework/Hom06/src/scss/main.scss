@@ -12,11 +12,13 @@
 // 4. Layout-related sections
 @import "layout/header", "layout/footer";
 
+@import "pages/product", "pages/catalog", "pages/cart", "pages/registry";
 // 5. Components
-@import "components/acc", "components/breadcrumbs", "components/delivery", "components/feature", "components/media",
-  "components/subscribe", "components/top";
+@import "components/acc", "components/breadcrumbs", "components/delivery", "components/feature", "components/subscribe",
+  "components/top";
 
 // 6. Page-specific styles
-@import "pages/product", "pages/catalog", "pages/cart", "pages/registry";
 
 // 7. Themes
+
+@import "components/media";

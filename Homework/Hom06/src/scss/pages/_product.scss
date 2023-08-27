@@ -31,7 +31,7 @@
 
     &_gender {
         margin-bottom: 27px;
-        font-size: 14px;
+        font-size: $mediumD;
         color: $colorAkcent;
         position: relative;
         &::after {
@@ -47,7 +47,7 @@
 
     &_name {
         color: #4d4d4d;
-        font-size: 18px;
+        font-size: $bigD;
         font-weight: 300;
         margin-bottom: 48px;
     }
@@ -62,7 +62,7 @@
 
     &_price {
         color: $colorAkcent;
-        font-size: 24px;
+        font-size: $bigD;
         font-weight: 300;
         margin-bottom: 60px;
     }
@@ -74,14 +74,14 @@
 .product_selected_block {
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 22px;
     margin-bottom: 48px;
 }
 .select-css {
     display: block;
     border: none;
     color: #6f6e6e;
-    font-size: 14px;
+    font-size: $SmallD;
     font-weight: 400;
 }
 .prod_btn {
@@ -90,7 +90,6 @@
     border: 2px solid $colorAkcent;
     align-items: center;
     justify-content: center;
-    max-width: 212px;
     margin: 0 auto;
     margin-bottom: 64px;
     i {
