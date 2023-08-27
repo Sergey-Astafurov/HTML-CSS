@@ -1267,3 +1267,130 @@ details {
 .check-info__button:hover {
   background: #c34554;
 }
+
+.registry {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  justify-content: space-between;
+}
+.registry__form-form {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 20px;
+  font-weight: 300;
+}
+.registry__title {
+  color: #222;
+  font-size: 16px;
+}
+.registry__item {
+  padding: 13px 17px 16px;
+  border: 1px solid #a4a4a4;
+}
+.registry__gender {
+  display: flex;
+  gap: 20px;
+}
+.registry__gender input {
+  width: 17px;
+  margin-right: 10px;
+}
+.registry__gender-item {
+  display: flex;
+}
+.registry__btn {
+  font-size: 14px;
+  color: #fff;
+  background: #f16d7f;
+  border: none;
+  padding: 16px 29px 17px;
+  align-self: flex-start;
+}
+.registry__info {
+  flex-basis: 650px;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.registry__info .registry__info-heading {
+  font-size: 24px;
+  font-weight: 300;
+}
+.registry__info .registry__info-desc {
+  font-size: 24px;
+  font-weight: 300;
+}
+.registry__desc {
+  color: #b1b1b1;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 19px;
+}
+.registry__feature-list {
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 24px;
+  padding-left: 20px;
+}
+.registry__feature-item {
+  list-style-image: url("../img/r1.svg");
+  padding-left: 14px;
+  margin-left: 10px;
+}
+
+.registry__gender-item > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .registry__gender-item */
+.registry__gender-item > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.registry__gender-item > span::before {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на радио */
+.registry__gender-item > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.registry__gender-item > input:not(:disabled):active + span::before {
+  background-color: #f16d7f;
+  border-color: #eb56e9;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.registry__gender-item > input:focus:not(:checked) + span::before {
+  border-color: #80bdff;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.registry__gender-item > input:checked + span::before {
+  border-color: #fb69f4;
+  background-color: #f16d7f;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
