@@ -1,3 +1,93 @@
+@media (max-width: 1024px) {
+    .beardcrumbs {
+        padding-left: 3%;
+    }
+    .shopping-wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+
+        gap: 128px;
+    }
+    .shopping-list {
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 100%;
+
+        gap: 40px;
+    }
+    .shopping-list {
+        width: 100%;
+        .shopping-item {
+            width: 100%;
+        }
+    }
+    .shopping-form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        &__title {
+            padding-top: 17px;
+            font-size: 16px;
+        }
+        &__form {
+            width: 360px;
+            gap: 20px;
+            input {
+                border: 1px solid #a4a4a4;
+                padding: 13px 16px;
+            }
+        }
+    }
+    .check-info {
+        flex-basis: 360px;
+
+        padding: 39px 34px 42px 43px;
+        &__sub {
+            font-size: 11px;
+            font-weight: 400;
+            margin-bottom: 12px;
+            align-self: flex-end;
+
+            .sub {
+                padding-left: 25px;
+                font-size: 11px;
+            }
+        }
+        &__grand {
+            align-self: flex-end;
+
+            color: #222;
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 21px;
+            padding-right: 4px;
+
+            .grand {
+                padding-left: 25px;
+                color: $colorAkcent;
+                font-size: 16px;
+            }
+        }
+        &__button {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 300;
+            padding: 16px 0;
+            background: $colorAkcent;
+            border: none;
+            margin-top: 17px;
+            transition: all 0.3s ease-out;
+            &:hover {
+                background: #c34554;
+                // color: $colorAkcent;
+            }
+        }
+    }
+}
+
 @media (max-width: 769px) {
     .registry {
         padding-left: 4%;
@@ -187,6 +277,111 @@
         }
         .f_social {
             margin-bottom: 40px;
+        }
+    }
+
+    .shopping-wrapper {
+        flex-wrap: wrap;
+        padding-top: 96px;
+        justify-content: space-between;
+        padding-bottom: 128px;
+        overflow-x: hidden;
+    }
+    .shopping-list {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .shopping-btn {
+        text-transform: lowercase;
+        justify-content: space-between;
+        gap: 9px;
+        &__btn {
+            padding: 9px 18px;
+            text-align: center;
+            max-width: 235px;
+            border: 1px solid #a4a4a4;
+            font-size: 12px;
+            font-weight: 300;
+            transition: all 0.2s ease-in-out;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+            &:hover {
+                background: $colorAkcent;
+                color: #fff;
+            }
+        }
+    }
+    .shopping-item {
+        position: relative;
+        height: 306px;
+        flex-basis: 188px;
+        gap: 17px;
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        background: #fff;
+        &__img {
+            flex-basis: 143px;
+            img {
+                width: 144px;
+                height: 100%;
+            }
+        }
+
+        &__body {
+            padding-top: 13px;
+            display: flex;
+            flex: 0 0 214px;
+            flex-direction: column;
+            color: #575757;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &__title {
+            color: #222;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        &__price {
+            padding-bottom: 9px;
+            .price {
+                color: $colorAkcent;
+                font-weight: 400;
+                font-size: 14px;
+            }
+        }
+
+        &__color {
+            padding-bottom: 9px;
+        }
+
+        &__size {
+            padding-bottom: 9px;
+        }
+
+        &__count {
+            display: flex;
+            align-items: center;
+
+            input {
+                margin-left: 24px;
+                padding-left: 16px;
+                padding-right: 16px;
+                width: 24px;
+                font-size: 10px;
+                border: 1px solid #eaeaea;
+            }
+        }
+        &__close {
+            top: 17px;
+            right: 12px;
+            width: 9px;
+            height: 9px;
+            svg {
+                width: 9px;
+            }
         }
     }
 }

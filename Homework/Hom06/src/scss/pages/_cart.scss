@@ -1,13 +1,12 @@
 .shopping {
     box-sizing: border-box;
-    &__form {
-    }
 }
 
 .shopping-wrapper {
+    flex-wrap: wrap;
     padding-top: 96px;
+    justify-content: space-between;
     padding-bottom: 128px;
-    gap: 128px;
 }
 .shopping-list {
     flex-direction: column;
@@ -30,18 +29,21 @@
     }
 }
 .shopping-item {
-    position: relative;
     width: 652px;
+    position: relative;
     height: 306px;
     gap: 31px;
     filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
     background: #fff;
     &__img {
-        max-width: 262px;
-        height: auto;
+        height: 100%;
+        img {
+            width: 265px;
+        }
     }
 
     &__body {
+        width: 390px;
         padding-top: 21px;
         display: flex;
         flex-direction: column;
@@ -133,6 +135,7 @@
     }
 }
 .check-info {
+    flex-basis: 360px;
     background: #f5f3f3;
 
     padding: 39px 34px 42px 43px;
